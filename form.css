@@ -76,7 +76,7 @@ header .logo img {
 }
 
   /* Form Container */
-  .container {
+  .search-container {
     width: 100%;
     max-width: 600px;
     margin: 50px auto;
@@ -160,7 +160,7 @@ header .logo img {
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .container {
+    .search-container {
       width: 90%;
     }
   }
