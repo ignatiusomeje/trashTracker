@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Form</title>
+    <link rel="stylesheet" href="form.css">
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Optional: Add a CSS library for styling the suggestion list -->
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/ttracker_logo.png" alt="Trash Tracker Logo">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span class="hamburger">&#9776;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#settings.html">ABOUT US</a></li>
+                <li><a href="#profile.html">OUR PEOPLE</a></li>
+                <li><a href="#help.html">SERVICES</a></li>
+                <li><a href="#settings.html">RECYCLING</a></li>
+                <li><a href="#elp.html">BLOG</a></li>
+                <li><a href="#help.html">CONTACT</a></li>
+                <li><a href="#help.html">CLIENTS</a></li>
+                <li><a href="form.html">ENTER LOCATION</a></li>
+            </ul>
+            <div class="profile-icon">
+                <img src="images/profile_icon.jpg" alt="Profile Icon" class="profile-logo">
+            </div>
+        </nav>
+    </header>  
+    <div class="container">
+        <h2>Enter Location</h2>
+        <form id="location-form">
+            <label for="location-name">Location Name:</label>
+            <input type="text" id="location-name" name="location-name" autocomplete="on" placeholder="Type a location name">
+            <ul id="location-suggestions"></ul> <!-- To display location suggestions -->
+            <label for="description">Full Address:</label>
+            <textarea id="address" name="address" placeholder="Enter full address"></textarea>
+
+            <label for="waste-type">Waste Type:</label>
+            <select id="waste-type" name="waste-type">
+                <option value="">Select a waste type</option>
+                <option value="industrial-waste">Industrial Waste</option>
+                <option value="hazardous">Hazardous</option>
+                <option value="organic">Organic</option>
+                <option value="metal">Metal</option>
+                <option value="glass">Glass</option>
+                <option value="plastic">Plastic</option>
+                <option value="paper">Paper</option>
+                <option value="e-waste">E-Waste</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Enter description"></textarea>
+
+            <label for="image-upload">Upload Image:</label>
+            <input type="file" id="image-upload" name="image-upload">
+
+            <input type="hidden" id="latitude" name="latitude">
+            <input type="hidden" id="longitude" name="longitude">
+
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <!-- Add Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- Add Leaflet Control Geocoder JS -->
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script type="module" src="form.js"></script>
+</body>
+</html>
