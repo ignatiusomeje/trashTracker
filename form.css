@@ -165,4 +165,29 @@ header .logo img {
     }
   }
   
-  
+  /* Mobile Styles */
+@media (max-width: 767px) {
+  .nav-links {
+      display: none; /* Hidden by default on small screens */
+      flex-direction: column; /* Vertical layout */
+      background-color: #00796b;
+      position: absolute;
+      top: 60px; /* Below the header */
+      left: 0;
+      right: 0;
+      z-index: 10;
+  }
+
+  .nav-links.active {
+      display: flex; /* Show when active */
+  }
+
+  .menu-toggle {
+      display: flex; /* Show hamburger on small screens */
+      align-items: center;
+  }
+
+  .hamburger {
+      color: white;
+  }
+}
