@@ -1,3 +1,5 @@
+
+
 /* Reset */
 * {
   margin: 0;
@@ -229,4 +231,28 @@ footer nav a {
   .hamburger {
       color: white;
   }
+}
+
+/* Team Section */
+.team-section {
+  display: flex;
+  flex-direction: row; /* Arrange items vertically */
+  gap: 20px; /* Space between team members */
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.team-member img {
+  width: 50%;
+  height: auto;
+  max-height: 150px; /* Limit height for uniformity */
+  object-fit: cover; /* Ensure image covers the area */
 }

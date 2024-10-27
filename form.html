@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="form.css">
     <!-- Add Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <!-- Optional: Add a CSS library for styling the suggestion list -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
 </head>
 <body>
-    
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -20,25 +20,31 @@
                 <span class="hamburger">&#9776;</span>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#settings.html">ABOUT US</a></li>
-                <li><a href="#help.html">SERVICES</a></li>
-                <li><a href="#help.html">CONTACT US</a></li>
-                <li><a href="form.html">SHARE LOCATION</a></li>
-            </ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="team.html">ABOUT US</a></li>
+                    <li><a href="dumpsites.html">DUMP SITES</a></li>
+                    <li><a href="form.html">SHARE LOCATION</a></li>
+                    <li><a href="#contact-us">CONTACT US</a></li>
+                </ul>
             <div class="profile-icon">
                 <img src="images/profile_icon.jpg" alt="Profile Icon" class="profile-logo">
             </div>
         </nav>
-    </header>  
+    </header>
     <div class="search-container">
         <h2>Enter Location</h2>
         <form id="location-form">
             <label for="location-name">Location Name:</label>
             <input type="text" id="location-name" name="location-name" autocomplete="on" placeholder="Type a location name">
-            <ul id="location-suggestions"></ul> <!-- To display location suggestions -->
-            <label for="description">Full Address:</label>
+            <ul id="location-suggestions"></ul>
+            <label for="address">Full Address:</label>
             <textarea id="address" name="address" placeholder="Enter full address"></textarea>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Enter description"></textarea>
+            
+            <label for="image-upload">Upload Image:</label>
+            <input type="file" id="image-upload" name="image-upload" accept="image/*">
 
             <label for="waste-type">Waste Type:</label>
             <select id="waste-type" name="waste-type">
@@ -51,14 +57,9 @@
                 <option value="plastic">Plastic</option>
                 <option value="paper">Paper</option>
                 <option value="e-waste">E-Waste</option>
-                <!-- Add more options as needed -->
             </select>
-
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" placeholder="Enter description"></textarea>
-
-            <label for="image-upload">Upload Image:</label>
-            <input type="file" id="image-upload" name="image-upload">
+            <!-- Feedback area for AI analysis -->
+            <div id="waste-type-feedback" style="margin-top:10px; font-weight:bold; display:none;">Analyzing waste type...</div>
 
             <input type="hidden" id="latitude" name="latitude">
             <input type="hidden" id="longitude" name="longitude">
