@@ -34,10 +34,14 @@
         <!-- Waste Type Carousel Section -->
         <section class="carousel-section">
             <div class="carousel">
+                <div class="slide"><img src="https://npr.brightspotcdn.com/dims4/default/93a47ee/2147483647/strip/true/crop/1500x1000+0+0/resize/880x587!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fkwmu%2Ffiles%2F201910%2F102519_USEPA_cleanupevent.jpg" alt="Hazardous Waste"></div>
                 <div class="slide"><img src="https://png.pngtree.com/png-vector/20240904/ourmid/pngtree-scrap-metal-processing-industry-rusty-brown-stack-png-image_13768333.png" alt="Metal Waste"></div>
                 <div class="slide"><img src="https://static.vecteezy.com/system/resources/thumbnails/049/097/576/small/mixed-pile-of-trash-with-plastic-bottles-cans-and-food-waste-isolated-transparent-png.png" alt="Plastic Waste"></div>
                 <div class="slide"><img src="https://thumbs.dreamstime.com/b/electronic-waste-28083357.jpg" alt="E-Waste"></div>
                 <div class="slide"><img src="https://www.shutterstock.com/image-photo/pile-organic-waste-composting-on-260nw-1918001312.jpg" alt="Organic Waste"></div>
+                <div class="slide"><img src="https://file.aiquickdraw.com/imgcompressed/img/compressed_a2a0321499c983a446a54b15ee85367f.webp" alt="Industrial Waste"></div>
+                
+
             </div>
         </section>
 
@@ -73,6 +77,24 @@
         function toggleMenu() {
             document.querySelector('.nav-links').classList.toggle('active');
         }
-    </script>
+    </script><script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = i === index ? "block" : "none";
+        });
+    }
+
+    function autoSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    setInterval(autoSlide, 3000); // Change every 3 seconds
+    showSlide(currentIndex); // Show the initial slide
+</script>
+
 </body>
 </html>

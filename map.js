@@ -86,3 +86,5 @@ async function placeMarkersForWasteType(wasteType) {
 document.addEventListener("DOMContentLoaded", () => {
     initMap();
 });
+
+
