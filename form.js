@@ -12,20 +12,17 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js";
 import { classifyWasteType } from "./wasteMapping.js";
 
-// Firebase configuration
-// form.js
-const apiKey = import.meta.env.VITE_API_KEY;
 
 // Use the variable as needed
 // For example, in your Firebase config
 const firebaseConfig = {
-  apiKey: apiKey,
-  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_APP_ID,
-  measurementId: import.meta.env.VITE_MEASUREMENT_ID,
+  apiKey: "AIzaSyC63fKcQygMGxuaekB3LUhLHBrtePlgorc",
+  authDomain: "plasware-pr.firebaseapp.com",
+  projectId: "plasware-pr",
+  storageBucket: "plasware-pr.appspot.com",
+  messagingSenderId: "754561855795",
+  appId: "1:754561855795:web:168f7ae976c39df1a0ce46",
+  measurementId: "G-XKGCH0KJ5Q"
 };
 
 const app = initializeApp(firebaseConfig);
