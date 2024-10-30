@@ -39,15 +39,6 @@ function initMap() {
 // When a waste type is selected from the dropdown, place markers
 wasteCategorySelect.addEventListener("change", function () {
   if (this.value !== "") {
-    dropPoint.disabled = false;
-    // placeMarkersForWasteType(this.value); // Place markers based on selected type
-  } else {
-    dropPoint.disabled = true;
-  }
-});
-
-dropPoint.addEventListener("change", () => {
-  if (this.value !== "") {
     placeMarkersForWasteType(this.value); // Place markers based on selected type
   }
 });

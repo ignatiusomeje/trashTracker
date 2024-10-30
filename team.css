@@ -62,6 +62,7 @@ body {
     }
 
     .team-details {
+      width: 100%;
       h3 {
         font-size: 1.2em;
         margin: 0;
