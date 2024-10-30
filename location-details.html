@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Location Details</title>
-    <link rel="stylesheet" href="location-details.css">
-</head>
-<body>
+    <link rel="stylesheet" href="location-details.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/ttracker_logo.png" alt="Trash Tracker Logo">
-            </div>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span class="hamburger">&#9776;</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="dumpsites.html">DUMP SITES</a></li>
-                <li><a href="form.html">UPLOAD DUMPSITE LOCATION</a></li>
-                <li><a href="team.html">ABOUT US</a></li>
-                <li><a href="#contact-us">CONTACT US</a></li>
-            </ul>
-            <div class="profile-icon">
-                <img src="images/profile_icon.jpg" alt="Profile Icon" class="profile-logo">
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/ttracker_logo.png" alt="Trash Tracker Logo" />
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span class="hamburger">&#9776;</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="dumpsites.html">DUMP SITES</a></li>
+          <li><a href="form.html">UPLOAD DUMPSITE LOCATION</a></li>
+          <li><a href="team.html">ABOUT US</a></li>
+          <li><a href="#contact-us">CONTACT US</a></li>
+        </ul>
+        <div class="profile-icon">
+          <img
+            src="images/profile_icon.jpg"
+            alt="Profile Icon"
+            class="profile-logo"
+          />
+        </div>
+      </nav>
     </header>
     <h1 id="location-name">Loading...</h1>
-    
+
     <div class="details-container">
-    <p id="location-address"></p>
-    <img id="location-image" alt="Waste Type Image" style="width:200px; height:auto; display:none;">
-    <p id="location-description"></p>
-</div>
-</body>
-<script src="location-details.js" type="module"></script>
-<script>
-    function toggleMenu() {
-        const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('active');
-    }
-</script>
+      <p id="location-address"></p>
+      <img
+        id="location-image"
+        alt="Waste Type Image"
+        style="width: 200px; height: auto; display: none"
+      />
+      <p id="location-description"></p>
+    </div>
+  </body>
+  <script src="location-details.js" type="module"></script>
+  <script src="./js/util.js"></script>
 </html>

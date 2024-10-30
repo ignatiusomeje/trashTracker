@@ -1,103 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Trash Tracker</title>
-    <link rel="stylesheet" href="style.css"> <!-- Your provided CSS -->
-    <link rel="stylesheet" href="team.css"> <!-- Your provided CSS -->
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <!-- Your provided CSS -->
+    <link rel="stylesheet" href="team.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/ttracker_logo.png" alt="Trash Tracker Logo">
-            </div>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span class="hamburger">&#9776;</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="dumpsites.html">DUMP SITES</a></li>
-                <li><a href="form.html">UPLOAD DUMPSITE LOCATION</a></li>
-                <li><a href="team.html">ABOUT US</a></li>
-                <li><a href="#contact-us">CONTACT US</a></li>
-            </ul>
-            <div class="profile-icon">
-                <img src="images/profile_icon.jpg" alt="Profile Icon" class="profile-logo">
-            </div>
-        </nav>
+      <nav class="navbar">
+        <img
+          class="logo"
+          src="images/ttracker_logo.png"
+          alt="Trash Tracker Logo"
+        />
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="dumpsites.html">DUMP SITES</a></li>
+          <li><a href="form.html">UPLOAD DUMPSITE LOCATION</a></li>
+          <li><a href="team.html">ABOUT US</a></li>
+          <!-- <li><a href="#contact-us">CONTACT US</a></li> -->
+        </ul>
+        <div class="profile-icon">
+          <img
+            src="images/profile_icon.jpg"
+            alt="Profile Icon"
+            class="profile-logo"
+          />
+          <!-- <div class="menu-toggle" onclick="toggleMenu()"> -->
+          <span onclick="toggleMenu()" class="hamburger">&#9776;</span>
+          <!-- </div> -->
+        </div>
+      </nav>
+      <ul class="mobile">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="dumpsites.html">DUMP SITES</a></li>
+        <li><a href="form.html">UPLOAD DUMPSITE LOCATION</a></li>
+        <li><a href="team.html">ABOUT US</a></li>
+        <!-- <li><a href="#contact-us">CONTACT US</a></li> -->
+      </ul>
     </header>
 
-    <main>
-        <h1>Meet Our Team</h1>
-        <h2>Our Vision and Mission</h2>
-        <p>At Trash Tracker, we are committed to creating a sustainable future by promoting responsible waste management and recycling practices.</p>
+    <main class="about-header">
+      <h1>Meet Our Team</h1>
+      <h2>Our Vision and Mission</h2>
+      <p>
+        At Trash Tracker, we are committed to creating a sustainable future by
+        promoting responsible waste management and recycling practices.
+      </p>
 
-        <section class="team-section">
-            <div class="team-member">
-                <div class="team-details">
-                <img src="images/profile_icon.gif" alt="Team Member 1">
-                <h3>John Doe</h3>
-                <p><span>Role:</span> Project Manager</p>
-                <p><span>Background:</span> Dedicated to community engagement and education on waste management.</p>
-            </div>
-            </div>
-            <div class="team-member">
-                <div class="team-details">
-                <img src="images/profile_icon.jpg" alt="Team Member 2">
-                <h3>Jane Smith</h3>
-                <p><span>Role:</span> Data Analyst</p>
-                <p><span>Background:</span> Specializes in data-driven solutions for waste management systems.</p>
-            </div>
-            </div>
-            <div class="team-member">
-                <div class="team-details">
-                <img src="images/profile_icon.jpg" alt="Team Member 3">
-                <h3>Emily Johnson</h3>
-                <p><span>Role:</span> Community Outreach Coordinator</p>
-                <p><span>Background:</span> Experienced in waste management projects with a passion for sustainability.</p>
-            </div>
-            </div>
-            <div class="team-member">
-            <div class="team-details">
-                <img src="images/profile_icon.jpg" alt="Team Member 4">
-                <h3>Michael Brown</h3>
-                <p><span>Role:</span> Environmental Scientist</p>
-                <p><span>Background:</span>Expert in environmental policies and recycling processes.</p>
+      <section class="team-section">
+        <div class="team-member">
+          <div class="team-details">
+            <img src="images/profile_icon.gif" alt="Team Member 1" />
+            <h3>John Doe</h3>
+            <p><span>Role:</span> Project Manager</p>
+            <p>
+              <span>Background:</span> Dedicated to community engagement and
+              education on waste management.
+            </p>
+          </div>
         </div>
+        <div class="team-member">
+          <div class="team-details">
+            <img src="images/profile_icon.jpg" alt="Team Member 2" />
+            <h3>Jane Smith</h3>
+            <p><span>Role:</span> Data Analyst</p>
+            <p>
+              <span>Background:</span> Specializes in data-driven solutions for
+              waste management systems.
+            </p>
+          </div>
         </div>
-            <div class="team-member"> 
-                <div class="team-details">
-                <img src="images/profile_icon.jpg" alt="Team Member 5">
-                <h3>Linda Davis</h3>
-                <p><span>Role:</span> Marketing Specialist</p>
-                <p><span>Background:</span> Focused on promoting recycling initiatives and sustainable practices.</p>
-            </div>
-            </div>
-        </section>
+        <div class="team-member">
+          <div class="team-details">
+            <img src="images/profile_icon.jpg" alt="Team Member 3" />
+            <h3>Emily Johnson</h3>
+            <p><span>Role:</span> Community Outreach Coordinator</p>
+            <p>
+              <span>Background:</span> Experienced in waste management projects
+              with a passion for sustainability.
+            </p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-details">
+            <img src="images/profile_icon.jpg" alt="Team Member 4" />
+            <h3>Michael Brown</h3>
+            <p><span>Role:</span> Environmental Scientist</p>
+            <p>
+              <span>Background:</span>Expert in environmental policies and
+              recycling processes.
+            </p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-details">
+            <img src="images/profile_icon.jpg" alt="Team Member 5" />
+            <h3>Linda Davis</h3>
+            <p><span>Role:</span> Marketing Specialist</p>
+            <p>
+              <span>Background:</span> Focused on promoting recycling
+              initiatives and sustainable practices.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <nav>
-            <a href="#help.html">Privacy Policy</a>
-            <a href="#help.html">Terms of Service</a>
-            <a href="#help.html">Contact Us</a>
-        </nav>
-        <p>Follow us on social media!</p>
-        <div>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-        </div>
+      <div class="footer-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+      <p>&copy; 2024 Trash Tracker. All rights reserved.</p>
     </footer>
 
-    <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-    </script>
-</body>
+    <script src="./js/util.js"></script>
+  </body>
 </html>
