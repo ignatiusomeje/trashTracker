@@ -4,13 +4,13 @@ const ctx = document.getElementById("myChart");
 
 const data = {
   // labels: [
-  //   "Middle East and North Africa",
-  //   "Sub-Saharan Africa",
-  //   "Latin American and Caribbean",
-  //   "North America",
-  //   "South Asia",
-  //   "Europe and Central Asia",
-  //   "East Asia and Pacific",
+    // "Middle East and North Africa",
+    // "Sub-Saharan Africa",
+    // "Latin American and Caribbean",
+    // "North America",
+    // "South Asia",
+    // "Europe and Central Asia",
+    // "East Asia and Pacific",
   // ],
   labels: ["MENA", "SSA", "LAC", "NA", "SA", "ECA", "EAP"],
   datasets: [
