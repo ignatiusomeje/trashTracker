@@ -1,100 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trash Tracker - Waste Management</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <!-- Header Section -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/ttracker_logo.png" alt="Trash Tracker Logo">
-            </div>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span class="hamburger">&#9776;</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="dumpsites.html">DUMP SITES</a></li>
-                <li><a href="form.html">UPLOAD DUMPSITE LOCATION</a></li>
-                <li><a href="team.html">ABOUT US</a></li>
-                <li><a href="#contact-us">CONTACT US</a></li>
-            </ul>
-            <div class="profile-icon">
-                <img src="images/profile_icon.jpg" alt="Profile Icon" class="profile-logo">
-            </div>
-        </nav>
+      <nav class="navbar">
+        <img
+          class="logo"
+          src="images/ttracker_logo.png"
+          alt="Trash Tracker Logo"
+        />
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="dumpsites.html">DUMP SITES</a></li>
+          <li><a href="form.html">UPLOAD DUMPSITE LOCATION</a></li>
+          <li><a href="team.html">ABOUT US</a></li>
+          <!-- <li><a href="#contact-us">CONTACT US</a></li> -->
+        </ul>
+        <div class="profile-icon">
+          <img
+            src="images/profile_icon.jpg"
+            alt="Profile Icon"
+            class="profile-logo"
+          />
+          <!-- <div class="menu-toggle" onclick="toggleMenu()"> -->
+          <span onclick="toggleMenu()" class="hamburger">&#9776;</span>
+          <!-- </div> -->
+        </div>
+      </nav>
+      <ul class="mobile">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="dumpsites.html">DUMP SITES</a></li>
+        <li><a href="form.html">UPLOAD DUMPSITE LOCATION</a></li>
+        <li><a href="team.html">ABOUT US</a></li>
+        <!-- <li><a href="#contact-us">CONTACT US</a></li> -->
+      </ul>
     </header>
 
     <!-- Main Content Section -->
     <main>
-        <!-- Waste Type Carousel Section -->
-        <section class="carousel-section">
-            <div class="carousel">
-                <div class="slide"><img src="https://npr.brightspotcdn.com/dims4/default/93a47ee/2147483647/strip/true/crop/1500x1000+0+0/resize/880x587!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fkwmu%2Ffiles%2F201910%2F102519_USEPA_cleanupevent.jpg" alt="Hazardous Waste"></div>
-                <div class="slide"><img src="https://png.pngtree.com/png-vector/20240904/ourmid/pngtree-scrap-metal-processing-industry-rusty-brown-stack-png-image_13768333.png" alt="Metal Waste"></div>
-                <div class="slide"><img src="https://static.vecteezy.com/system/resources/thumbnails/049/097/576/small/mixed-pile-of-trash-with-plastic-bottles-cans-and-food-waste-isolated-transparent-png.png" alt="Plastic Waste"></div>
-                <div class="slide"><img src="https://thumbs.dreamstime.com/b/electronic-waste-28083357.jpg" alt="E-Waste"></div>
-                <div class="slide"><img src="https://www.shutterstock.com/image-photo/pile-organic-waste-composting-on-260nw-1918001312.jpg" alt="Organic Waste"></div>
-                <div class="slide"><img src="https://file.aiquickdraw.com/imgcompressed/img/compressed_a2a0321499c983a446a54b15ee85367f.webp" alt="Industrial Waste"></div>
-                
+      <!-- Waste Type Carousel Section -->
+      <section class="carousel-section">
+        <div class="carousel">
+          <div class="slide">
+            <img
+              src="https://npr.brightspotcdn.com/dims4/default/93a47ee/2147483647/strip/true/crop/1500x1000+0+0/resize/880x587!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fkwmu%2Ffiles%2F201910%2F102519_USEPA_cleanupevent.jpg"
+              alt="Hazardous Waste"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://png.pngtree.com/png-vector/20240904/ourmid/pngtree-scrap-metal-processing-industry-rusty-brown-stack-png-image_13768333.png"
+              alt="Metal Waste"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/049/097/576/small/mixed-pile-of-trash-with-plastic-bottles-cans-and-food-waste-isolated-transparent-png.png"
+              alt="Plastic Waste"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://thumbs.dreamstime.com/b/electronic-waste-28083357.jpg"
+              alt="E-Waste"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://www.shutterstock.com/image-photo/pile-organic-waste-composting-on-260nw-1918001312.jpg"
+              alt="Organic Waste"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://file.aiquickdraw.com/imgcompressed/img/compressed_a2a0321499c983a446a54b15ee85367f.webp"
+              alt="Industrial Waste"
+            />
+          </div>
+        </div>
+      </section>
 
-            </div>
-        </section>
+      <!-- Description & Call-to-Action Section -->
+      <section class="cta-section">
+        <h2>Join the Movement to a Cleaner Planet</h2>
+        <p>
+          Learn how Trash Tracker helps communities manage and recycle waste
+          effectively. Become part of the change today and contribute to
+          sustainable waste management efforts.
+        </p>
+        <a href="dumpsites.html"
+          ><button class="cta-button">Get Started</button></a
+        >
+      </section>
 
-        <!-- Description & Call-to-Action Section -->
-        <section class="cta-section">
-            <h2>Join the Movement to a Cleaner Planet</h2>
-            <p>Learn how Trash Tracker helps communities manage and recycle waste effectively. Become part of the change today and contribute to sustainable waste management efforts.</p>
-             <a href="dumpsites.html"><button class="cta-button"  > Get Started </button></a>
-        </section>
-
-        <!-- Global Waste Data Representation Section -->
-        <section class="data-section">
-            <h2>Global Waste Insights</h2>
-            <div class="chart-container">
-                <img src="https://datatopics.worldbank.org/what-a-waste/img/v2_projected_waste_generation.png" alt="Waste Data Chart">
-            </div>
-            <p class="chart-description">Every year, millions of tons of waste are produced globally. Together, we can reduce, recycle, and repurpose waste to protect our planet.</p>
-        </section>
+      <!-- Global Waste Data Representation Section -->
+      <section class="data-section">
+        <h2>Global Waste Insights</h2>
+        <div class="chart-container">
+          <canvas id="myChart"></canvas>
+        </div>
+        <!-- <div class="chart-container">
+          <img
+            src="https://datatopics.worldbank.org/what-a-waste/img/v2_projected_waste_generation.png"
+            alt="Waste Data Chart"
+          />
+        </div> -->
+        <p class="chart-description">
+          Every year, millions of tons of waste are produced globally. Together,
+          we can reduce, recycle, and repurpose waste to protect our planet.
+        </p>
+      </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <div class="footer-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
-        </div>
-        <p>&copy; 2024 Trash Tracker. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+      <p>&copy; 2024 Trash Tracker. All rights reserved.</p>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        }
-    </script><script>
-    let currentIndex = 0;
-    const slides = document.querySelectorAll(".slide");
-
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.display = i === index ? "block" : "none";
-        });
-    }
-
-    function autoSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-    }
-
-    setInterval(autoSlide, 3000); // Change every 3 seconds
-    showSlide(currentIndex); // Show the initial slide
-</script>
-
-</body>
+    <script type="module" src="./js/chart.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script src="./js/util.js"></script>
+  </body>
 </html>
