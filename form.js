@@ -139,7 +139,7 @@ document
   .getElementById("image-upload")
   .addEventListener("change", async function (event) {
     const feedbackDiv = document.getElementById("waste-type-feedback");
-    feedbackDiv.textContent = "Analyzing waste type...";
+    feedbackDiv.textContent = "AI is analysing the waste type...";
     feedbackDiv.style.display = "block";
 
     const file = event.target.files[0];
